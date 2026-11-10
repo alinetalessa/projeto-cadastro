@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cabecalho h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    font-size: 16px;
+    color: #64748b;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.campos-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: stretch;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 11px 18px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+button:hover {
+    background-color: #1e40af;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 16px;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+td button + button {
+    margin-left: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px 10px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    td button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+button:active {
+    background-color: #1e3a8a;
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    td button {
+        padding: 6px;
+        font-size: 11px;
+    }
+}
