@@ -11,6 +11,11 @@ body {
     color: #1e293b;
 }
 
+.obrigatorio {
+    color: red;
+    font-weight: bold;
+}
+
 h1 {
     font-size: 24px;
     margin-bottom: 16px;
